@@ -9,7 +9,7 @@ import logo5 from '../../../images/logos/uber.png';
 const Logos = () => {
     return (
         <div>
-            <div style={{ margin: "30px 0" }}>
+            <div style={{ margin: "5rem 0" }}>
                 <div className='d-flex justify-content-center align-items-center'>
                     <Card style={{ width: "7rem", border: "none", marginLeft: "5rem" }} >
                         <Card.Img variant="top" src={logo1} />
@@ -17,10 +17,10 @@ const Logos = () => {
                     <Card style={{ width: "7rem", border: "none", marginLeft: "5rem" }} >
                         <Card.Img variant="top" src={logo2} />
                     </Card>
-                    <Card style={{ width: "7rem", border: "none", marginLeft: "5rem" }} >
+                    <Card style={{ width: "5rem", border: "none", marginLeft: "5rem" }} >
                         <Card.Img variant="top" src={logo5} />
                     </Card>
-                    <Card style={{ width: "7rem", border: "none", marginLeft: "5rem" }} >
+                    <Card style={{ width: "6rem", border: "none", marginLeft: "5rem" }} >
                         <Card.Img variant="top" src={logo3} />
                     </Card>
                     <Card style={{ width: "7rem", border: "none", marginLeft: "5rem" }} >
