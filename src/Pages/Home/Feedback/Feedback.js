@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Feedback = ({ feedback }) => {
-    const { } = feedback;
+    // const { } = feedback;
     return (
         <div>
             <Col>

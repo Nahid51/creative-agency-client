@@ -4,9 +4,9 @@ import { Container, Row } from 'react-bootstrap';
 const Feedbacks = () => {
     // const feedbackInfo = useGetReviewsQuery() || {};
     return (
-        <div className='home-top'>
+        <div>
             <div className='test-margin'>
-                <h3 className='text-center'>Testimonials</h3>
+                <h3 className='fw-bold text-center'>Clients <span style={{ color: "#7AB259" }}>Feedback</span></h3>
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         {/* {feedbackInfo.data?.map((feedback) => (
