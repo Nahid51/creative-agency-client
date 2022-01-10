@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import AuthProvider from './Context/Authprovider';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 function App() {
   return (
     <div className="App">
@@ -14,9 +16,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            {/* <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/allservices" element={<AllServices />} />
+            {/*<Route path="/allservices" element={<AllServices />} />
             <Route path="/failed" element={<Failed />} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
               <Route path="/dashboard" element={<Book />} />

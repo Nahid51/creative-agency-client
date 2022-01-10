@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../images/logos/logo.png'
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
             <div className="home-top">
@@ -29,7 +31,7 @@ const Header = () => {
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/dashboard">Dashboard</NavLink>
                                     <HashLink className='me-5 text-dark text-decoration-none' to="/home#contact">Contact</HashLink>
                                 </Nav>
-                                {/* <Nav className="ms-auto">
+                                <Nav className="ms-auto">
                                     <Nav.Link href="">Signed in as: {user.displayName}</Nav.Link>
                                     {user.email ?
                                         <Button onClick={logOut} className='btn edit-btn'>Logout</Button> :
@@ -37,7 +39,7 @@ const Header = () => {
                                             <Button className='btn edit-btn'>Login</Button>
                                         </NavLink>
                                     }
-                                </Nav> */}
+                                </Nav>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
