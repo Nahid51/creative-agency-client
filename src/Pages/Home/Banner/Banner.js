@@ -10,9 +10,9 @@ const Banner = () => {
         <div className='home-top'>
             <Header />
             <Container>
-                <div className='d-flex justify-content-center align-items-center'>
-                    <Card className='border-0 home-top'>
-                        <Card.Body className='p-5'>
+                <div className='row'>
+                    <Card className='col-12 col-md-6 border-0 home-top'>
+                        <Card.Body className='banner-text'>
                             <Card.Title className='banner-head'>Let’s Grow Your
                                 Brand To The
                                 Next Level</Card.Title>
@@ -24,7 +24,7 @@ const Banner = () => {
                             </NavLink>
                         </Card.Body>
                     </Card>
-                    <Card className='border-0 w-75 home-top'>
+                    <Card className='col-12 col-md-6 border-0 home-top'>
                         <Card.Body>
                             <Card.Img variant="top" src={frame} />
                         </Card.Body>
