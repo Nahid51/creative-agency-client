@@ -1,11 +1,11 @@
-.banner-text{
+/* .banner-text{
     position: absolute;
     top: 15%;
     left: 20%;
     right: 10%;
-}
+} */
 .banner-head{
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 900;
 }
 .banner-paragraph{

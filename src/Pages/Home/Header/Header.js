@@ -22,7 +22,7 @@ const Header = () => {
                             </NavLink>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mx-auto d-flex align-items-center">
+                                <Nav className="ms-auto d-flex align-items-center">
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/">Home</NavLink>
                                     <HashLink className='me-5 text-dark text-decoration-none' to="/home#projects">Projects</HashLink>
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/allservices">Services</NavLink>
