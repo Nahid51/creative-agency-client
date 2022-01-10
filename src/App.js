@@ -5,14 +5,16 @@ import {
   Route
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
+import AuthProvider from './Context/Authprovider';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          {/* <Route path="/login" element={<Login />} />
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            {/* <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/allservices" element={<AllServices />} />
             <Route path="/failed" element={<Failed />} />
@@ -28,8 +30,9 @@ function App() {
               <Route path="/dashboard/manageservice" element={<AdminRoute><ManageService /></AdminRoute>} />
             </Route>
             <Route path="*" element={<NotFound />} /> */}
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
