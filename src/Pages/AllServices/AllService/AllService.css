@@ -1,12 +1,12 @@
-.text-card{
+.allService-card{
     height: 5rem;
     text-align: justify;
     overflow-y: scroll;
   }
-.text-card::-webkit-scrollbar{
+.allService-card::-webkit-scrollbar{
     display: none;
   }
-.service-card:hover{
+.hover-card:hover{
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
   cursor: pointer;
   transform: scale(1.05);

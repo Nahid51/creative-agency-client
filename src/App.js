@@ -20,6 +20,9 @@ import BookingList from './Pages/Dashboard/BookingList/BookingList';
 import AllBookingList from './Pages/Dashboard/BookingList/AllBookingList';
 import Book from './Pages/Dashboard/Book/Book';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import Failed from './Pages/PaymentStatusShowing/Failed';
+import AllServices from './Pages/AllServices/Allservices/AllServices';
+import NotFound from './Pages/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -30,8 +33,8 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            {/* <Route path="/allservices" element={<AllServices />} /> */}
-            {/* <Route path="/failed" element={<Failed />} /> */}
+            <Route path="/allservices" element={<AllServices />} />
+            <Route path="/failed" element={<Failed />} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
               <Route path="/dashboard" element={<Book />} />
               <Route path="/dashboard/bookinglist" element={<AllBookingList />} />
@@ -43,7 +46,7 @@ function App() {
               <Route path="/dashboard/makeadmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
               <Route path="/dashboard/manageservice" element={<AdminRoute><ManageService /></AdminRoute>} />
             </Route>
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
