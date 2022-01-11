@@ -22,7 +22,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             
-            <Route path="/dashboard" element={<PrivateRoute><DashboardHome/></PrivateRoute>}>
+            <Route path="/dashboard" element={<PrivateRoute><DashboardHome/></PrivateRoute>} />
               {/* <Route path="/dashboard" element={<AllServices />} />
               <Route path="/dashboard/bookinglist" element={<AllBookingList />} />
               <Route path="/dashboard/bookinglist/:id" element={<BookingList />} />
