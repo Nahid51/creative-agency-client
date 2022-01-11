@@ -21,7 +21,7 @@ export default class OurWorks extends Component {
             pauseOnHover: true
         };
         return (
-            <div style={{ backgroundColor: "#111430" }}>
+            <div id='projects' style={{ backgroundColor: "#111430", marginTop: "5rem" }}>
                 <h3 className='fw-bold text-center text-light pt-5'>Here are some of <span style={{ color: "#7AB259" }}>our works</span></h3>
                 <Container style={{ padding: "30px 0 70px 0" }}>
                     <Slider {...settings}>

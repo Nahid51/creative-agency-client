@@ -5,20 +5,21 @@ import useAuth from '../../../Hooks/useAuth';
 const MakeAdmin = () => {
     const [adminData, setAdminData] = useState('');
     const [success, setSuccess] = useState(false);
-    const { error, isLoading, token } = useAuth();
-
+    const { user, error, isLoading } = useAuth();
+    const userEmail = user?.email;
     const handleAddAdmin = e => {
         setAdminData(e.target.value);
     }
     const handleButton = e => {
         e.preventDefault();
-        const user = { adminData }
+        const user = {
+            admin: adminData,
+            user: userEmail
+        }
+        console.log(user);
         fetch('http://localhost:5000/users/admin', {
             method: 'PUT',
-            headers: {
-                'authorization': `Bearer ${token}`,
-                'content-type': 'application/json'
-            },
+            headers: { 'content-type': 'application/json' },
             body: JSON.stringify(user)
         })
             .then(res => res.json())

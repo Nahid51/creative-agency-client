@@ -12,7 +12,6 @@ import AdminRoute from './Redirects/AdminRoute';
 import PrivateRoute from './Redirects/PrivateRoute';
 import ManageService from './Pages/Dashboard/ManageService/ManageService';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
-import AddProject from './Pages/Dashboard/AddProject/AddProject';
 import AddService from './Pages/Dashboard/AddService/AddService';
 import OrderList from './Pages/Dashboard/OrderList/OrderList';
 import Review from './Pages/Dashboard/Review/Review';
@@ -42,7 +41,6 @@ function App() {
               <Route path="/dashboard/review" element={<Review />} />
               <Route path="/dashboard/orderlist" element={<AdminRoute><OrderList /></AdminRoute>} />
               <Route path="/dashboard/addservice" element={<AdminRoute><AddService /></AdminRoute>} />
-              <Route path="/dashboard/addproject" element={<AdminRoute><AddProject /></AdminRoute>} />
               <Route path="/dashboard/makeadmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
               <Route path="/dashboard/manageservice" element={<AdminRoute><ManageService /></AdminRoute>} />
             </Route>

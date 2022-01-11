@@ -1,11 +1,10 @@
 import React from 'react';
 import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='mt-5 footer-bg text-dark'>
+        <div id='contact' className='mt-5 footer-bg text-dark'>
             <Container className='p-5'>
                 <div className='row'>
                     <Card className='col-12 col-md-6 card-setup'>

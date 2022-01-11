@@ -72,15 +72,6 @@ const Review = () => {
                                 rows={3}
                             />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control
-                                style={{ border: 'none', backgroundColor: '#F7F7F7', padding: '10px' }}
-                                onBlur={handleAddReview}
-                                name='rating'
-                                type="number"
-                                placeholder="Rating ? out of 5"
-                            />
-                        </Form.Group>
                         <Button onClick={handleButton} className='btn edit-btn'>Submit</Button>
                         <Button type='reset' className='btn edit-btn ms-1'>Reset</Button>
                     </Form>}

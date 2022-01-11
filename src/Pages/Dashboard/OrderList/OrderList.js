@@ -6,9 +6,10 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import { useGetOrdersQuery } from '../../../Redux/slices/serviceSlice';
 
 const OrderList = () => {
-    // const allOrder = useGetOrdersQuery();
+    const allOrder = useGetOrdersQuery();
     return (
         <div>
             <h2>Order List</h2>
@@ -24,7 +25,7 @@ const OrderList = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {/* {allOrder?.data?.map((row) => (
+                        {allOrder?.data?.map((row) => (
                             <TableRow
                                 key={row._id}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -35,7 +36,7 @@ const OrderList = () => {
                                 <TableCell align="left">{row.payment_status}</TableCell>
                                 <TableCell align="left">{row.shipping_method}</TableCell>
                             </TableRow>
-                        ))} */}
+                        ))}
                     </TableBody>
                 </Table>
             </TableContainer>

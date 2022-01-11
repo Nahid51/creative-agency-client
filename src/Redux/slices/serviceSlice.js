@@ -18,12 +18,6 @@ export const servicesApi = createApi({
                 method: 'GET'
             })
         }),
-        getProjects: builder.query({
-            query: () => ({
-                url: 'projects',
-                method: 'GET'
-            })
-        }),
         getReviews: builder.query({
             query: () => ({
                 url: 'reviews',
@@ -40,4 +34,4 @@ export const servicesApi = createApi({
     }),
 })
 
-export const { useGetServicesQuery, useGetAllServicesQuery, useGetProjectsQuery, useGetReviewsQuery, useLazyGetOrdersQuery } = servicesApi
+export const { useGetServicesQuery, useGetAllServicesQuery, useGetReviewsQuery, useGetOrdersQuery } = servicesApi

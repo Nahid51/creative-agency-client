@@ -1,20 +1,22 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { useGetReviewsQuery } from '../../../Redux/slices/serviceSlice';
+import Feedback from './Feedback';
 
 const Feedbacks = () => {
-    // const feedbackInfo = useGetReviewsQuery() || {};
+    const reviewInfo = useGetReviewsQuery() || {};
     return (
         <div>
             <div className='test-margin'>
-                <h3 className='fw-bold text-center'>Clients <span style={{ color: "#7AB259" }}>Feedback</span></h3>
+                <h3 className='fw-bold text-center mb-5'>Clients <span style={{ color: "#7AB259" }}>Feedback</span></h3>
                 <Container>
                     <Row xs={1} md={3} className="g-4">
-                        {/* {feedbackInfo.data?.map((feedback) => (
+                        {reviewInfo?.data?.map((review) => (
                             <Feedback
-                                key={feedback._id}
-                                feedback={feedback}
+                                key={review._id}
+                                feedback={review}
                             ></Feedback>
-                        ))} */}
+                        ))}
                     </Row>
                 </Container>
             </div>

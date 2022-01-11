@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import frame from '../../../images/logos/Frame.png'
 import Header from '../Header/Header';
 import './Banner.css'
@@ -10,8 +11,8 @@ const Banner = () => {
         <div className='home-top'>
             <Header />
             <Container>
-                <div className='row'>
-                    <Card className='col-12 col-md-6 border-0 home-top'>
+                <div className='responsive-card'>
+                    <Card className='border-0 home-top'>
                         <Card.Body className='banner-text'>
                             <Card.Title className='banner-head'>Let’s Grow Your
                                 Brand To The
@@ -19,9 +20,9 @@ const Banner = () => {
                             <Card.Text className='text-secondary banner-paragraph'>
                                 Online web design Agency, the mordern way to create your own website, you can use our service to make sure your website is safe.
                             </Card.Text>
-                            <NavLink to="/allservices">
+                            <HashLink to="/home#contact">
                                 <Button className='btn edit-btn'>Hire Us</Button>
-                            </NavLink>
+                            </HashLink>
                         </Card.Body>
                     </Card>
                     <Card className='col-12 col-md-6 border-0 home-top'>

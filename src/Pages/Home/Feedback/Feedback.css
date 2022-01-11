@@ -1,0 +1,8 @@
+.feedback-card{
+    height: 5rem;
+    text-align: justify;
+    overflow-y: scroll;
+  }
+.feedback-card::-webkit-scrollbar{
+    display: none;
+  }

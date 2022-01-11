@@ -26,7 +26,7 @@ const Header = () => {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ms-auto d-flex align-items-center">
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/">Home</NavLink>
-                                    <HashLink className='me-5 text-dark text-decoration-none' to="/home#projects">Projects</HashLink>
+                                    <HashLink className='me-5 text-dark text-decoration-none' to="/home#projects">Our Works</HashLink>
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/allservices">Services</NavLink>
                                     <NavLink className='me-5 text-dark text-decoration-none' to="/dashboard">Dashboard</NavLink>
                                     <HashLink className='me-5 text-dark text-decoration-none' to="/home#contact">Contact</HashLink>
