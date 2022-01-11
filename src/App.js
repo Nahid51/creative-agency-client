@@ -8,6 +8,9 @@ import Home from './Pages/Home/Home/Home';
 import AuthProvider from './Context/Authprovider';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import AdminRoute from './Redirects/AdminRoute';
+import PrivateRoute from './Redirects/PrivateRoute';
+import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome'
 function App() {
   return (
     <div className="App">
@@ -18,10 +21,9 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            {/*<Route path="/allservices" element={<AllServices />} />
-            <Route path="/failed" element={<Failed />} />
-            <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
-              <Route path="/dashboard" element={<Book />} />
+            
+            <Route path="/dashboard" element={<PrivateRoute><DashboardHome/></PrivateRoute>}>
+              {/* <Route path="/dashboard" element={<AllServices />} />
               <Route path="/dashboard/bookinglist" element={<AllBookingList />} />
               <Route path="/dashboard/bookinglist/:id" element={<BookingList />} />
               <Route path="/dashboard/review" element={<Review />} />
