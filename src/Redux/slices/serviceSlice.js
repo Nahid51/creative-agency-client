@@ -18,26 +18,26 @@ export const servicesApi = createApi({
                 method: 'GET'
             })
         }),
-        // getProjects: builder.query({
-        //     query: () => ({
-        //         url: 'projects',
-        //         method: 'GET'
-        //     })
-        // }),
-        // getReviews: builder.query({
-        //     query: () => ({
-        //         url: 'reviews',
-        //         method: 'GET'
-        //     })
-        // }),
-        // getOrders: builder.query({
-        //     query: () => ({
-        //         url: 'orderList',
-        //         method: 'GET'
-        //     })
-        // }),
+        getProjects: builder.query({
+            query: () => ({
+                url: 'projects',
+                method: 'GET'
+            })
+        }),
+        getReviews: builder.query({
+            query: () => ({
+                url: 'reviews',
+                method: 'GET'
+            })
+        }),
+        getOrders: builder.query({
+            query: () => ({
+                url: 'orderList',
+                method: 'GET'
+            })
+        }),
 
     }),
 })
 
-export const { useGetServicesQuery } = servicesApi
+export const { useGetServicesQuery, useGetAllServicesQuery, useGetProjectsQuery, useGetReviewsQuery, useLazyGetOrdersQuery } = servicesApi
