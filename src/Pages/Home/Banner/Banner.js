@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Card, Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import frame from '../../../images/logos/Frame.png'
 import Header from '../Header/Header';
@@ -14,7 +13,7 @@ const Banner = () => {
                 <div className='responsive-card'>
                     <Card className='border-0 home-top'>
                         <Card.Body className='banner-text'>
-                            <Card.Title className='banner-head'>Let’s Grow Your
+                            <Card.Title className='banner-head'>Let's Grow Your
                                 Brand To The
                                 Next Level</Card.Title>
                             <Card.Text className='text-secondary banner-paragraph'>
