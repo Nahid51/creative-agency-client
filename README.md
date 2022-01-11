@@ -1,15 +1,16 @@
 # Getting Started with Create React App
 
 Our Website name is Creative Agency.
-Livesite Link 
+[Creative Agency](https://creative-agency-20caa.web.app/).
 
 ## About this website
 ### Tools that are used in this project
 -- ReactJs, React Bootstrap, React-Router-Dom ,Redux.
 -- For authentication used firebase authentication.
 -- For backend used nodejs, expressjs, mongodb.
--- For hosting we used netlify, firebase and heroku.
--- For online payment used SSL commertz, UUID method.
+-- For frontend deploying we used firebase hosting
+-- For backend deployig we used heroku.
+-- For online payment we used SSL commerz, UUID method.
 
 ### Project overview
 Its a agency based waebsite where we provide :
