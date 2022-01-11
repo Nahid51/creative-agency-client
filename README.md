@@ -14,9 +14,8 @@ Our Website name is Creative Agency.
 
 ### Project overview
 Its a agency based waebsite where we provide :
-1. First of all it is full responsive website for mobile and dektop.
-2. We create web and mobile design as per customer requirement.
+1. First of all it is fully responsive website for mobile and dektop.
+2. We create web and mobile UI design as per customer requirement.
 3. Also we provide graphic design work as per customer demand.
-4. We build website and develop it as per customer requirement. 
-5. Client can pay their bills in online.
-
+4. We build full website and develop it as per customer requirement. 
+5. Clients will be able to pay theirs bills online to book their service.
