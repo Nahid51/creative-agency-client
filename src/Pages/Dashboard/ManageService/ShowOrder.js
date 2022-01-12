@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import { Alert, Button, Card, Spinner } from 'react-bootstrap';
+import { Alert, Button, Card } from 'react-bootstrap';
 
 const ShowOrder = ({ myOrder }) => {
     const { _id, product_name, product_image, product_profile } = myOrder;
-    const [success, setSuccess] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const handleDelete = () => {
         const procced = window.confirm('Are you sure to delete this file?');
@@ -16,7 +15,6 @@ const ShowOrder = ({ myOrder }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        setSuccess(true);
                         setIsLoading(true);
                         console.log(data);
                     }
@@ -25,8 +23,7 @@ const ShowOrder = ({ myOrder }) => {
     }
     return (
         <div>
-            {success && <Alert variant='danger'>Delete Successfully!</Alert>}
-            {isLoading ? <Spinner animation="border" variant="warning" /> :
+            {isLoading ? <Alert variant='danger'>Delete Successfully!</Alert> :
                 <Card>
                     <Card.Body>
                         <Card.Title className='row align-items-center'>
