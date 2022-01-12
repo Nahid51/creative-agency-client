@@ -9,7 +9,7 @@ const ShowOrder = ({ myOrder }) => {
     const handleDelete = () => {
         const procced = window.confirm('Are you sure to delete this file?');
         if (procced) {
-            fetch(`http://localhost:5000/orderList/${_id}`, {
+            fetch(`https://shrouded-hamlet-53510.herokuapp.com/orderList/${_id}`, {
                 method: 'DELETE',
                 headers: { 'content-type': 'application/json' }
             })

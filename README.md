@@ -19,3 +19,10 @@ Its a agency based waebsite where we provide :
 3. Also we provide graphic design work as per customer demand.
 4. We build full website and develop it as per customer requirement. 
 5. Clients will be able to pay theirs bills online to book their service.
+
+### Project features
+1. We show some services, projects and reviews in our UI.
+2. we create a different control panel for users and admin.
+3. Users can book our service, see their book list and review us.
+4. Admin can see all order lists. He/she can add a new service, make a user admin and manage all the services.
+5. If a customer wants to book a service, he or she must first select a service from the All Services page of his or her choice.

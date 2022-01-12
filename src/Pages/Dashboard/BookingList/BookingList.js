@@ -11,7 +11,7 @@ const BookingList = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${id}`)
+        fetch(`https://shrouded-hamlet-53510.herokuapp.com/orders/${id}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [id]);
@@ -21,7 +21,7 @@ const BookingList = () => {
             tran_id: id,
             val_id: service?.val_id
         }
-        fetch('http://localhost:5000/validate', {
+        fetch('https://shrouded-hamlet-53510.herokuapp.com/validate', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(serviceData)
